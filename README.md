@@ -1,63 +1,72 @@
-# 🎮 Number Guessing Game
+# 🎮 Python Number Guessing Game
 
-A simple and interactive **Number Guessing Game built with Python**. The computer randomly selects a number, and the player tries to guess it with the help of hints.
+A fun and interactive **Number Guessing Game built with Python**. The computer randomly generates a secret number, and the player tries to guess it using helpful hints.
+
+This project combines Python fundamentals such as loops, conditional statements, random number generation, and user input in a simple command-line game.
 
 ## ✨ Features
 
 - 🎯 Three difficulty levels: Easy, Medium, and Hard
-- 🎲 Random number generation using Python's `random` module
-- 💡 Hints to help guess the correct number
+- 🎲 Random number generation
+- 💡 Smart hints: Too High, Too Low, and Very Close
 - 🏆 Score tracking based on the number of attempts
-- 🔄 Play multiple rounds
-- 🚪 Option to exit the game anytime
+- 🔄 Option to play multiple rounds
+- 🚪 Option to exit the game
+- 🐍 Beginner-friendly Python code
 
 ## 🕹️ Difficulty Levels
 
-| Level | Number Range |
-|---|---|
-| Easy | 1–50 |
-| Medium | 1–200 |
-| Hard | 1–500 |
+| Level | Difficulty | Number Range |
+|---|---|---|
+| 1 | Easy | 1–50 |
+| 2 | Medium | 1–100 or 1–200 |
+| 3 | Hard | 1–500 |
+
+*Note: The Medium level range depends on which version of the game you run.*
+
+## 💡 How the Game Works
+
+1. The computer randomly selects a secret number.
+2. The player chooses a difficulty level.
+3. The player enters a guessed number.
+4. The game provides hints:
+   - **Too Low:** Your guess is smaller than the secret number.
+   - **Too High:** Your guess is greater than the secret number.
+   - **Very Close:** Your guess is within 5 of the secret number.
+5. The player continues guessing until the correct number is found.
+6. The game displays a success message and, in the score-enabled version, the number of attempts.
 
 ## 🛠️ Technologies Used
 
-- **Language:** Python
+- **Language:** Python 3
 - **Module:** `random`
-- **Concepts:** Loops, conditional statements, user input, and random number generation
+- **Concepts:** Variables, loops, conditional statements, user input, `abs()`, and score calculation
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-**1. Clone the repository**
+### Prerequisites
+
+Install Python 3 on your computer.
+
+### 1. Clone the Repository
 
 ```bash
 git clone <your-repository-url>
 ```
 
-**2. Navigate to the project folder**
+### 2. Navigate to the Project Folder
 
 ```bash
 cd <your-project-folder>
 ```
 
-**3. Run the Python program**
+### 3. Run the Game
 
 ```bash
 python main.py
 ```
 
-Make sure Python 3 is installed on your system.
-
-## 📖 How to Play
-
-1. Run the program.
-2. Enter `YES` to start playing.
-3. Choose a difficulty level: `1`, `2`, or `3`.
-4. Enter your guessed number.
-5. Follow the hints:
-   - **Low:** Your guess is lower than the secret number.
-   - **High:** Your guess is higher than the secret number.
-6. Guess correctly to win and view your score.
-7. Enter `NO` when asked to stop playing.
+No external libraries are required.
 
 ## 📂 Project Structure
 
@@ -68,23 +77,24 @@ Number-Guessing-Game/
 └── README.md
 ```
 
-## 🎯 Learning Objectives
+## 📚 Learning Objectives
 
-This project demonstrates the practical use of Python fundamentals, including:
+This project helped me practice:
 
-- `while` loops
-- `if-elif-else` conditions
-- User input and output
-- Random number generation
-- Basic score calculation
+- Generating random numbers using Python
+- Using `while` loops for repeated gameplay
+- Applying `if-elif-else` conditions
+- Handling user input and displaying output
+- Comparing numbers and calculating differences
+- Implementing basic scoring logic
 
 ## 🔮 Future Improvements
 
-- Add a maximum number of attempts.
-- Add input validation for invalid entries.
-- Improve the scoring system.
-- Add a leaderboard and high-score tracking.
-- Create a graphical user interface (GUI).
+- Add input validation for invalid choices.
+- Introduce a maximum number of attempts.
+- Add a high-score leaderboard.
+- Include difficulty-based scoring.
+- Develop a graphical user interface (GUI).
 
 ## 👨‍💻 Author
 
